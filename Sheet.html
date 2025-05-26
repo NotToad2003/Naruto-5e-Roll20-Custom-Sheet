@@ -1,0 +1,55 @@
+<div class="sheet-tabs">
+  <input type="radio" name="tab" class="sheet-tab-button" value="character" checked> Character Info
+  <input type="radio" name="tab" class="sheet-tab-button" value="extra"> Extra Info
+  <input type="radio" name="tab" class="sheet-tab-button" value="jutsu"> Jutsu
+  <input type="radio" name="tab" class="sheet-tab-button" value="summon"> Summons
+  <input type="radio" name="tab" class="sheet-tab-button" value="puppet"> Puppets
+</div>
+
+<div class="sheet-tab-content sheet-tab-character">
+  <h2>Character Info</h2>
+  <label>Name <input type="text" name="attr_character_name"></label>
+  <label>Clan <input type="text" name="attr_clan"></label>
+  <label>Village <input type="text" name="attr_village"></label>
+  <label>Rank <input type="text" name="attr_rank"></label>
+  <label>Chakra Base <input type="number" name="attr_chakra_base"></label>
+  <label>Chakra Total <input type="number" name="attr_chakra_total" disabled></label>
+</div>
+
+<div class="sheet-tab-content sheet-tab-extra">
+  <h2>Extra Character Info</h2>
+  <label>Backstory <textarea name="attr_backstory"></textarea></label>
+  <label>Attributes <textarea name="attr_attributes"></textarea></label>
+  <label>Goals <textarea name="attr_goals"></textarea></label>
+</div>
+
+<div class="sheet-tab-content sheet-tab-jutsu">
+  <h2>Jutsu</h2>
+  <fieldset class="repeating_jutsu">
+    <label>Name <input type="text" name="attr_jutsu_name"></label>
+    <label>Type <input type="text" name="attr_jutsu_type"></label>
+    <label>Rank <input type="text" name="attr_jutsu_rank"></label>
+    <label>Chakra Cost <input type="number" name="attr_jutsu_cost"></label>
+    <label>Effect <textarea name="attr_jutsu_effect"></textarea></label>
+  </fieldset>
+</div>
+
+<div class="sheet-tab-content sheet-tab-summon">
+  <h2>Summon Sheet</h2>
+  <fieldset class="repeating_summon">
+    <label>Name <input type="text" name="attr_summon_name"></label>
+    <label>Species <input type="text" name="attr_summon_species"></label>
+    <label>Stats <textarea name="attr_summon_stats"></textarea></label>
+    <label>Abilities <textarea name="attr_summon_abilities"></textarea></label>
+  </fieldset>
+</div>
+
+<div class="sheet-tab-content sheet-tab-puppet">
+  <h2>Puppet Master Sheet</h2>
+  <fieldset class="repeating_puppet">
+    <label>Name <input type="text" name="attr_puppet_name"></label>
+    <label>Parts <textarea name="attr_puppet_parts"></textarea></label>
+    <label>Weapons <textarea name="attr_puppet_weapons"></textarea></label>
+    <label>Abilities <textarea name="attr_puppet_abilities"></textarea></label>
+  </fieldset>
+</div>
