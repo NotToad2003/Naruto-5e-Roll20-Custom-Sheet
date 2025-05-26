@@ -1,0 +1,33 @@
+.sheet-tabs {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 10px;
+}
+.sheet-tab-content {
+  display: none;
+}
+input.sheet-tab-button[value="character"]:checked ~ .sheet-tab-character,
+input.sheet-tab-button[value="extra"]:checked ~ .sheet-tab-extra,
+input.sheet-tab-button[value="jutsu"]:checked ~ .sheet-tab-jutsu,
+input.sheet-tab-button[value="summon"]:checked ~ .sheet-tab-summon,
+input.sheet-tab-button[value="puppet"]:checked ~ .sheet-tab-puppet {
+  display: block;
+}
+.sheet-tab-character,
+.sheet-tab-extra,
+.sheet-tab-jutsu,
+.sheet-tab-summon,
+.sheet-tab-puppet {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+label {
+  display: block;
+  margin: 5px 0;
+}
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
